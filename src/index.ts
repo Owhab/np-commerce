@@ -3,6 +3,7 @@ import { PORT } from './secrets';
 import RootRouter from './routes';
 
 const app: Express = express();
+app.use(express.json());
 
 app.use('/api', RootRouter);
 
